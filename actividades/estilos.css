@@ -1,0 +1,126 @@
+body {
+    font-family: 'Honk', system-ui;
+    font-family: 'Protest Strike', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eae0fa;
+}
+
+.titulo {
+    background-color: #8a57e7;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cajones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#actividad {
+    padding: 8px;
+    border: 1px solid #7c17f0;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+#agregar {
+    background-color: #9d7df5;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#agregar:hover {
+    background-color: #672cf1;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#fecha {
+    padding: 8px;
+    border: 1px solid #530df7;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #9e80f1;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #672cf1;
+}
+
+/* Estilo básico para el checkbox */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #7c5af5;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Estilo cuando el checkbox está marcado */
+input[type="checkbox"]:checked {
+    background-color: #6a50fa;
+    border-color: #9d4beb;
+}
+
+/* Estilo del indicador dentro del checkbox */
+input[type="checkbox"]::before {
+    content: '\2713';
+    display: block;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+/* Estilo del indicador cuando el checkbox está marcado */
+input[type="checkbox"]:checked::before {
+    visibility: visible;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+td {
+    border: 1px solid #672cf1;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #eae0fa;
+}
